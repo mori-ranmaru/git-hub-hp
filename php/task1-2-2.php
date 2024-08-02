@@ -7,14 +7,17 @@
 </head>
 <body>
 <?php
-$tax = 1.1;
-$pencil = 100;
+define('TAX',1.1);
+define('TAX1',10);
+$pencil = '鉛筆';
+$pencil1 = 100;
+$pencil2 = 110;
 $eraser = 200;
 ?>
 
-<p>現在、消費税は10％です。</p>
-<p>鉛筆が100円で税込<?= $pencil * $tax; ?>円です。</p>
-<p>消しゴムが200円で税込<?= $eraser * $tax; ?>円です。</p>
+<p>現在、消費税は<?= TAX1;?>%です。</p>
+<p><?= $pencil;?>が<?= $pencil1;?>円で税込<?= $pencil2;?>円です。</p>
+<p>消しゴムが200円で税込<?= $eraser * TAX;?>円です。</p>
 
 
 </body>
