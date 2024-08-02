@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css/reset.css" media="screen, projection" rel="stylesheet">
-	<link href="css/style.css" media="screen, projection" rel="stylesheet">
+<link href="css/style.css" media="screen, projection" rel="stylesheet">
+
   <title>Document</title>
 </head>
 <body>
@@ -13,24 +14,24 @@
     ?>
   <table>
         <tr>
-            <th><?=($week[0]);?></th>
-            <th><?=($week[1]);?></th>
-            <th><?=($week[2]);?></th>
+            <th><?=($stationery[0]);?></th>
+            <th><?=($stationery[1]);?></th>
+            <th><?=($stationery[2]);?></th>
         </tr>
         <tr>
-            <td><?=($week[3]);?></td>
-            <td><?=($week[4]);?></td>
-            <td><?=($week[5]);?></td>
+            <td><?=($stationery[3]);?></td>
+            <td><?=($stationery[4]);?></td>
+            <td><?=($stationery[5]);?></td>
         </tr>
         <tr>
-            <td><?=($week[6]);?></td>
-            <td><?=($week[7]);?></td>
-            <td><?=($week[8]);?></td>
+            <td><?=($stationery[6]);?></td>
+            <td><?=($stationery[7]);?></td>
+            <td><?=($stationery[8]);?></td>
         </tr>
         <tr>
-            <td><?=($week[9]);?></td>
-            <td><?=($week[10]);?></td>
-            <td><?=($week[11]);?></td>
+            <td><?=($stationery[9]);?></td>
+            <td><?=($stationery[10]);?></td>
+            <td><?=($stationery[11]);?></td>
         </tr>
     </table>
 </body>
