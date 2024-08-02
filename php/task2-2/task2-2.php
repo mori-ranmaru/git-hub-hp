@@ -13,22 +13,22 @@
         <tr>
             <th><?=($week[0]);?></th>
             <th><?=($week[1]);?></th>
-            <th><?=($week[3]);?></th>
+            <th><?=($week[2]);?></th>
         </tr>
         <tr>
+            <td><?=($week[3]);?></td>
             <td><?=($week[4]);?></td>
             <td><?=($week[5]);?></td>
-            <td><?=($week[6]);?></td>
         </tr>
         <tr>
+            <td><?=($week[6]);?></td>
             <td><?=($week[7]);?></td>
             <td><?=($week[8]);?></td>
-            <td><?=($week[9]);?></td>
         </tr>
         <tr>
+            <td><?=($week[9]);?></td>
             <td><?=($week[10]);?></td>
             <td><?=($week[11]);?></td>
-            <td><?=($week[12]);?></td>
         </tr>
     </table>
 </body>
