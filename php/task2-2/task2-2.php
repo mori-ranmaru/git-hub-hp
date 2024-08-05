@@ -10,29 +10,46 @@
 </head>
 <body>
     <?php
-      $stationery = array("商品名", "価格", "税込価格", "鉛筆", "100", "110", "消しゴム", "200", "220", "定規", "300", "330");
+      $stationery = array(
+        "商品名", "価格", "税込価格", 
+      );
+      $pencil = array(
+        "pen" => "鉛筆", 
+        "price" => "100", 
+        "tax" => "110"
+      );
+      $eraser = array(
+        "era" => "消しゴム", 
+        "price" =>  "200", 
+        "tax" =>"220"
+      );
+      $ruler = array(
+        "rul"=> "定規", 
+        "price" => "300", 
+        "tax" =>"330"
+      );
     ?>
   <table>
-        <tr>
-            <th><?=($stationery[0]);?></th>
-            <th><?=($stationery[1]);?></th>
-            <th><?=($stationery[2]);?></th>
-        </tr>
-        <tr>
-            <td><?=($stationery[3]);?></td>
-            <td><?=($stationery[4]);?></td>
-            <td><?=($stationery[5]);?></td>
-        </tr>
-        <tr>
-            <td><?=($stationery[6]);?></td>
-            <td><?=($stationery[7]);?></td>
-            <td><?=($stationery[8]);?></td>
-        </tr>
-        <tr>
-            <td><?=($stationery[9]);?></td>
-            <td><?=($stationery[10]);?></td>
-            <td><?=($stationery[11]);?></td>
-        </tr>
-    </table>
+    <tr>
+        <th><?= $stationery[0]; ?></th>
+        <th><?= $stationery[1]; ?></th>
+        <th><?= $stationery[2]; ?></th>
+    </tr>
+    <tr>
+        <td><?= $pencil['pen']; ?></td>
+        <td><?= $pencil['price']; ?></td>
+        <td><?= $pencil['tax']; ?></td>
+    </tr>
+    <tr>
+        <td><?= $eraser['era']; ?></td>
+        <td><?= $eraser['price']; ?></td>
+        <td><?= $eraser['tax']; ?></td>
+    </tr>
+    <tr>
+        <td><?= $ruler['rul']; ?></td>
+        <td><?= $ruler['price']; ?></td>
+        <td><?= $ruler['tax']; ?></td>
+    </tr>
+</table>
 </body>
 </html>
