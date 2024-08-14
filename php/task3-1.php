@@ -7,12 +7,6 @@
 </head>
 <body>
 <?php
-  $stationery = array(
-      "name" => "商品名", 
-      "price" => "価格", 
-      "tax" => "税込価格", 
-      "tax2" => "1Dzの価格"
-  );
   $pencil = array(
       "name" => "鉛筆", 
       "price" => 100,
@@ -28,10 +22,11 @@
   ?>
 <table>
     <tr>
-        <th><?= $stationery['name']; ?></th>
-        <th><?= $stationery['price']; ?></th>
-        <th><?= $stationery['tax']; ?></th>
-        <th><?= $stationery['tax2']; ?></th>
+        <th>商品名</th>
+        <th>価格</th>
+        <th>税込価格</th>
+        <th>1Dzの価格</th>
+       
     </tr>
     <tr>
         <td><?= $pencil['name']; ?></td>
