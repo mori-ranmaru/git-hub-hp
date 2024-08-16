@@ -24,9 +24,11 @@
     else {
         $lucky = "大吉";
     }
+    ?>
 
-    echo "今日の運勢は{$lucky}です。";
-?>
+    <h1>今日の運勢は<font color="red">
+      <?= $lucky?>
+    </font>です。</h1>
 
 </body>
 </html>
