@@ -13,8 +13,8 @@ switch ($month) {
   case 4:
   case 5:
      echo "$month 月は春です";
-  break;
-
+  break;//ここまでのswitch文を修了させて次の処理に進めるために書く
+//発生させた乱数の値が（case）3.4.5の場合
   case 6:
   case 7:
   case 8:
@@ -27,9 +27,7 @@ switch ($month) {
      echo "$month 月は秋です";
   break;
 
-  case 12:
-  case 1:
-  case 2:
+  default://今までのcaseに当てはまらないもの
      echo "$month 月は冬です";
   break;
 };

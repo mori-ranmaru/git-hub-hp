@@ -33,13 +33,13 @@
         <td><?= "$pencil[name]"; ?></td>
         <td><?= $pencil['price']; ?>円</td>
         <td><?= $pencil['price'] * TAX?>円</td>
-        <td><?= $pencil['tax2']; ?>円</td>
+        <td><?= $pencil['price'] * 12 * TAX; ?>円</td>
     </tr>
     <tr>
         <td><?= $eraser['name']; ?></td>
         <td><?= $eraser['price']; ?>円</td>
-        <td><?= $eraser['tax']; ?>円</td>
-        <td><?= $eraser['tax2']; ?>円</td>
+        <td><?= $eraser['price'] * TAX?>円</td>
+        <td><?= $eraser['price'] * 12 * TAX; ?>円</td>
     </tr>
 </table>
 

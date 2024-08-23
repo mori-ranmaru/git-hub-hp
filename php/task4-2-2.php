@@ -12,6 +12,7 @@
     if ($month >= 3 && $month <= 5) {
         $season = "春";
     } 
+    //$monthは3以上かつ(&&)5以下なら〜
     elseif ($month >= 6 && $month <= 8) {
         $season = "夏";
     } 
