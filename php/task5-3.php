@@ -7,37 +7,34 @@
 </head>
 <body>
 <?php
-  $pencil = array(
-      "name" => "鉛筆", 
-      "price" => 100,
-      "tax" => 100 * 1.1,
-  );
-  $eraser = array(
-      "name" => "消しゴム", 
-      "price" => 200,
-      "tax" => 200 * 1.1, 
-  );
-  ?>
-<table>
-    <tr>
-        <th>商品名</th>
-        <th>価格</th>
-        <th>税込価格</th>
-        
-       
-    </tr>
-    <tr>
-        <td><?= $pencil['name']; ?></td>
-        <td><?= $pencil['price']; ?>円</td>
-        <td><?= $pencil['tax']; ?>円</td>
+  $stationerys = array(
+      array(
+          "name" => "鉛筆", 
+          "price" => 100,
+          "tax" => 100 * 1.1,
+      ),
+      array(
+          "name" => "消しゴム", 
+          "price" => 200,
+          "tax" => 200 * 1.1, 
+      )
+  );//3-1では別々だった鉛筆達が筆箱（stationerys）にまとめられたイメージ
 
-    </tr>
-    <tr>
-        <td><?= $eraser['name']; ?></td>
-        <td><?= $eraser['price']; ?>円</td>
-        <td><?= $eraser['tax']; ?>円</td>
-        
-    </tr>
-</table>
+  echo "<table>";
+  echo "<tr>";
+  echo "<th>商品名</th>";
+  echo "<th>価格</th>";
+  echo "<th>税込価格</th>";
+  echo "</tr>";
+
+  foreach ($stationerys as $stationery) {
+      echo "<tr>";
+      echo "<td>" . $stationery['name'] . "</td>";
+      echo "<td>" . $stationery['price'] . "円</td>";
+      echo "<td>" . $stationery['tax'] . "円</td>";
+      echo "</tr>";
+  }
+  echo "</table>";
+?>
 </body>
 </html>

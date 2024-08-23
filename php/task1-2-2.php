@@ -19,6 +19,6 @@ $eraser = 200;
 <p><?= $pencil;?>が<?= $pencil1;?>円で税込<?= $pencil2;?>円です。</p>
 <p>消しゴムが200円で税込<?= $eraser * TAX;?>円です。</p>
 
-
+１−１答え　<?= "Hello, World!"?>
 </body>
 </html>
