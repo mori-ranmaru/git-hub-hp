@@ -28,7 +28,7 @@
   if ($score >= 30) {
     echo "回避";
   } else {
-    echo "赤点<br>";}
+    echo "赤点<br>";} 
 
     //ループ　for
     for ($a = 0; $a <= 10; $a++) {
@@ -42,6 +42,29 @@
     echo "<li>" . $item . "</li>";
     }
     echo "</ul>";
+  
+    $name = "森";
+    $age = "26";
+    echo "私の名前は $name で 年齢は $age 才です";
+
+    $fruits = ["apple", "banana", "cherry"];
+    foreach($fruits as $fruit ){
+      echo $fruit;
+    }
+
+    $score = mt_rand(1,100);
+     if($score >= 90){
+      echo "優";
+     }
+     elseif($score >= 80){
+     echo "良";
+    }
+    elseif($score >= 70){
+      echo "可";
+     }
+     else{
+      echo "不可";
+     }
 ?>
 
 </body>
