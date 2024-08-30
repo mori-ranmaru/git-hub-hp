@@ -8,12 +8,12 @@
 <body>
 <?php
   define('TAX',1.1);
-  $pencil = array(
+  $pencil = [
       "name" => "鉛筆", 
       "price" => 100,
     //   "tax" => 100 * 1.1, 
     //   "tax2" => (100 * 1.1) * 12 
-  );
+  ];//配列の時は[]でもいい！
   $eraser = array(
       "name" => "消しゴム", 
       "price" => 200,
@@ -30,7 +30,7 @@
        
     </tr>
     <tr>
-        <td><?= "$pencil[name]"; ?></td>
+        <td><?= $pencil['name']; ?></td>
         <td><?= $pencil['price']; ?>円</td>
         <td><?= $pencil['price'] * TAX?>円</td>
         <td><?= $pencil['price'] * 12 * TAX; ?>円</td>

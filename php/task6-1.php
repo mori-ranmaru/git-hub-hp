@@ -10,12 +10,11 @@
   $str = "気合いだ！";
 function showString(int $num, string $str): void {
     for ($i = 0; $i < $num; $i++) {
-        echo $str . PHP_EOL;
+      echo $str ;
     }
 }
 showString(3, $str);
 ?>
-
 
 </body>
 </html>
