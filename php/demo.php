@@ -7,16 +7,19 @@
 </head>
 <body>
 <?php
-
-$fruits = [ 'apple' , 'melon' , 'banana',"なし"];
-
-foreach( $fruits as $fruit ){
-
-  echo $fruit;
-
-  echo '<br />';
-
+function max_number($n1, $n2) {
+    if ($n1 > $n2) {
+        return $n1;
+    } else {
+        return $n2;
+    }
 }
+
+// 例
+$a = 9;
+$b = 21;
+echo "最大値は: " . max_number($a, $b);
 ?>
+
 </body>
 </html>
